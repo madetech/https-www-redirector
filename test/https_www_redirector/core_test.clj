@@ -2,6 +2,6 @@
   (:require [clojure.test :refer :all]
             [https-www-redirector.core :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest ensure-valid-url-test
+  (testing "Transform non https, non www urls to include these"
+    (is (= (eval ensure-valid-url) "foo"))))
