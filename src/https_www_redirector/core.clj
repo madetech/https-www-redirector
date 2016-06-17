@@ -6,8 +6,7 @@
   [& args]
   (println "Hello, World!"))
 
-
 (defn ensure-valid-url
   "Transform url format"
   [url]
-  "foo")
+  (if (re-find #"https://" url) url (str "https://" url)))
