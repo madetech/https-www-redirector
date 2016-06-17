@@ -7,6 +7,7 @@
                  [org.clojure/clojure "1.8.0"]
                  [ring "1.5.0"]
                  [ring/ring-jetty-adapter "1.5.0"]
+                 [clojurewerkz/urly "2.0.0-alpha5"]
                 ]
   :main ^:skip-aot https-www-redirector.core
   :target-path "target/%s"
