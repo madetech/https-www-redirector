@@ -16,4 +16,4 @@
     (is (= (ensure-valid-url "https://google.com/foo/bar") "https://www.google.com/foo/bar")))
 
   (testing "Preserves url path segments with trailing slash"
-    (is (= (ensure-valid-url "https://google.com/foo/bar/") "https://www.google.com/foo/bar/")))
+    (is (= (ensure-valid-url "https://google.com/foo/bar/") "https://www.google.com/foo/bar/"))))
